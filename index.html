@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers - Pokémon</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://www.pngmart.com/files/2/Pokemon-Go-PNG-Transparent-Image.png" alt="Pokémon Go">
+      <h1>Pokédex</h1>
+      
+        <nav>
+          <ul class="buttons-container">
+              <li class="li-btns">
+                  <div class="dropdown">
+                      <button id="filtrar-button">Filtrar</button>
+                      <ul id="filtrar-options" class="filtrar-options">
+                          <li class="li-btns">
+                            <label for="tipo"></label>
+                              <select id="tipo" data-testid="select-filter" name="type">
+                            
+                              <option disabled selected>Por tipo</option>
+                              <option value="steel">Acero</option>
+                              <option value="water">Agua</option>
+                              <option value="bug">Bicho</option>
+                              <option value="dragon">Dragón</option>
+                              <option value="electric">Eléctrico</option>
+                              <option value="ghost">Fantasma</option>
+                              <option value="fire">Fuego</option>
+                              <option value="fairy">Hada</option>
+                              <option value="ice">Hielo</option>
+                              <option value="fighting">Lucha</option>
+                              <option value="normal">Normal</option>
+                              <option value="grass">Planta</option>
+                              <option value="psychic">Psíquico</option>
+                              <option value="rock">Roca</option>
+                              <option value="dark">Siniestro</option>
+                              <option value="ground">Tierra</option>
+                              <option value="poison">Veneno</option>
+                              <option value="flying">Volador</option>
+                            </select>
+                          </li>
+
+                          <li class="li-btns">
+                            <label for="region"> </label>
+                            <select id="region" data-testid="select-filter" name="region">
+                              <option disabled selected>Por región</option>
+                              <option value="kanto">Kanto</option>
+                              <option value="johto">Johto</option>
+                            </select>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="li-btns">
+                <div class="dropdown">
+                  <button id="ordenar-button" data-testid="button-ordenar">Ordenar</button>
+                  <div class="ordenar-options" id="ordenar-options">
+                    <button data-orden="num-asc">Número (Ascendente)</button>
+                    <button data-orden="num-desc">Número (Descendente)</button>
+                    <button data-orden="name-asc">Nombre (A - Z)</button>
+                    <button data-orden="name-desc">Nombre (Z - A)</button>
+                  </div>
+                </div>
+              </li>
+              <li class="li-btns dropdown">
+                <button id="stats-button">Estadísticas</button>
+              </li>
+              <li class="li-btns dropdown">
+                <button id="clear-button" data-testid="button-clear">Limpiar</button>
+            </li>
+          </ul>
+        </nav>
+        
+    </header>
+
+    <main >
+      <h2>Lista de Pokémon</h2>
+      <div id="root"><ul id="listaPokemon"></ul></div>  
+        
+      <div id="tablaContainer" style="display: none;">
+        
+    </div>  
+    </main>
+
+    <footer>
+      <p>Creado por:</p>
+      <p>Brigitte Utria y Danae Rodriguez</p>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

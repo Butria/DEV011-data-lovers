@@ -1,0 +1,275 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+  width: 100%;
+  background-color: #254A8F;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  margin-left: auto;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px #385CAA;
+}
+  
+header img {
+  width: 25%;
+  height: auto;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  margin: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.li-btns {
+  list-style: none;
+  margin: 0px 10px 10px 10px;
+}
+.dropdown button {
+  background-color: #4270c4;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.ordenar-options,.filtrar-options {
+  display: none;
+  position: absolute;
+  background-color: #4270c4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 0px;
+}
+
+select[data-testid="select-filter"] {
+  cursor: pointer;
+  background-color: #4270c4;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+select[data-testid="select-filter"]:hover {
+  cursor: pointer;
+  background-color: #254A8F;
+
+}
+
+.mostrar {
+  display: block;
+}
+
+.ordenar-options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ordenar-options button:hover {
+  background-color: #254A8F;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.estilos-tabla {
+  background-color:#EACA4C ;
+  color: #254A8F;
+  text-align: center;
+  
+}
+table {
+  margin: auto;
+  width: 90%;
+  margin-top: 25px;
+  text-transform:capitalize;
+}
+td {
+  padding: 5px 16px;
+}
+h2 {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+#listaPokemon {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.li-card {
+  list-style: none;
+  /* background: linear-gradient(180deg, #D4EFDF 40%, #E8DAEF 60%); */
+  width: 260px;
+  height: 400px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .20);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tarjeta {
+  width: 90%;
+  height: 350px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+}
+dd {
+  margin: 0;
+}
+
+dd img {
+  width: 155px;
+  height: 155px;
+
+}
+
+.caracteristicas {
+  display: flex;
+  justify-content: space-between;
+  color: #254A8F;
+  width: 90%;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+/* Estilo para el contenedor de "resistant" y "weaknesses" */
+.resistant,
+.weaknesses {
+  width: 45%; /* Ocupa el ancho completo de la tarjeta */
+  text-align: left;
+  
+}
+
+/* Estilo para los elementos de la lista */
+.resistant ul,
+.weaknesses ul {
+  list-style: none;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize; 
+}
+.btn-masInfo {
+  border: none;
+  width: 50%;
+  background: transparent;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  text-decoration-line: underline;
+  color: #4270c4;
+  margin: 0 auto;
+}
+/* Estilo para el reverso de la carta */
+.back {
+  display: none;
+}
+  
+/* Estilos para la parte trasera de la tarjeta */
+.back {
+  background-color: #e0e0e0; /* Color de fondo de la parte trasera */
+  padding: 20px; /* Espaciado dentro de la parte trasera */
+  display: none; /* Oculta inicialmente la parte trasera */
+}
+
+/* Estilo para el texto en la parte trasera */
+.back p {
+  margin: 0; /* Elimina el margen predeterminado de los párrafos */
+}
+
+
+footer {
+  background-color:#254A8F ;
+  color:#FFF;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+
+}
+footer p {
+  margin: 0;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  header img {
+    height: 95px;
+    width: 160px;
+  }
+  #listaPokemon {
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  table {
+    width: 70%;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 190px;
+  }
+  header img {
+    width: 285px;
+    height: 178px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .dropdown button {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  main {
+    width: 100%;
+  }
+}
+
